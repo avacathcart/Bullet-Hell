@@ -14,7 +14,7 @@ void addObjects() {
    objects.add(new Star());
    
    if(frameCount % 250==0)objects.add(new Enemy());
-      if(frameCount % 60==0)objects.add(new Enemy2());
+    if(frameCount % 60==0)objects.add(new Enemy2());
     if(frameCount % 130==0)objects.add(new Enemy3());
 
 
@@ -38,7 +38,7 @@ fill(255);
 textFont(cdnumbers);
  textSize(20);
  text(frameRate, 100, 20);
- text(objects.size(), 100, 40);  
+ text(objects.size(), 100, 40);
   
 }
 

@@ -3,7 +3,7 @@ class Enemy2 extends GameObject {
 
   Enemy2() {
     super(random(width), -20, 0, 5, 40, 255, 1);
-     threshold = 15;
+     threshold = 23;
     cooldown = threshold;
   }
   

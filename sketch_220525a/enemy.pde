@@ -11,8 +11,8 @@ class Enemy extends GameObject {
     super.act();
      cooldown++;
     if (cooldown >= threshold) {
-      objects.add(new EnemyBullet(x,y,0,10, blue));
-          objects.add(new EnemyBullet(x, y, 4, 8, blue));
+    objects.add(new EnemyBullet(x,y,0,10, blue));
+    objects.add(new EnemyBullet(x, y, 4, 8, blue));
     objects.add(new EnemyBullet(x, y, -4, 8, blue));
       cooldown = 0; 
     }
@@ -35,9 +35,9 @@ class Enemy extends GameObject {
       }
       i++;
     }
+    
     //remove if goes off screen
     if (offScreen()) lives = 0; 
-  }
 }
-
-//at moment of collison add bunch of particles to list for explosion
+}
+ 

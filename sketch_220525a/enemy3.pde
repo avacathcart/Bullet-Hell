@@ -2,7 +2,7 @@ class Enemy3 extends GameObject {
   int cooldown, threshold;
 
   Enemy3() {
-    super(random(width), -20, 0, 5, 20, purple, 1);
+    super(random(width), -20, 0, 5, 30, pink, 1);
      threshold = 25;
     cooldown = threshold;
   }
@@ -11,8 +11,8 @@ class Enemy3 extends GameObject {
     super.act();
      cooldown++;
     if (cooldown >= threshold) {
-      objects.add(new EnemyBullet(x,y, 11,0, purple));
-          objects.add(new EnemyBullet(x, y, -11, 0, purple));
+      objects.add(new EnemyBullet(x,y, 10,5, pink));
+          objects.add(new EnemyBullet(x, y, -10, 5, pink));
       cooldown = 0; 
     }
     

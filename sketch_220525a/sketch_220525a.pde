@@ -5,6 +5,7 @@ color navy = #010038;
 color purple = #293A80;
 color orange = #FFCE1C;//F39422;
 color blue = #537EC5;
+color pink = #E342C0;
 //color red = #E76F51;
 
 int mode;
@@ -31,7 +32,6 @@ void setup(){
   //objects.add
     Retrolight = createFont ("Retrolight.ttf", 100);
     cdnumbers = createFont ("cdnumbers.ttf", 100);
-
 }
 
 void draw() {
